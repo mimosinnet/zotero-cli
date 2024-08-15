@@ -18,9 +18,9 @@ __all__ = ["ZoteroCLI",
 
 OBJECTS = ["attachments", "notes", "annotations"]
 CACHE_FILES = ["collections", "items", "marks"] + OBJECTS
-CACHE_PATH = ts.Path("~/.zotero/cache", create=True, expand=True)
-CREDS_FILE = ts.CredentialsPath("~/.zotero")
-GROUP_FILE = ts.Path("~/.zotero/group", expand=True)
+CACHE_PATH = ts.Path("~/.config/zotero-cli/cache", create=True, expand=True)
+CREDS_FILE = ts.CredentialsPath("~/.config/zotero-cli")
+GROUP_FILE = ts.Path("~/.config/zotero/group", expand=True)
 
 OPERATORS = {
     '==': operator.eq,
